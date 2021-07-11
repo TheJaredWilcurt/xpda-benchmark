@@ -1,0 +1,19 @@
+{
+  "name": "desktop-benchmarks",
+  "version": "1.0.0",
+  "description": "Benchmarking time to open/close NW.js and Electron",
+  "scripts": {
+    "start": "npm run bench:nw && npm run bench:electron",
+    "start:nw": "nw .\\nw",
+    "start:electron": "electron .\\electron",
+    "bench:nw": "performance run \"nw .\\nw\"",
+    "bench:electron": "performance run \"electron .\\electron\""
+  },
+  "author": "TheJaredWilcurt",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "13.1.6",
+    "nw": "0.54.1-sdk",
+    "performance-cli": "0.1.1"
+  }
+}
