@@ -4,10 +4,15 @@
   "description": "Benchmarking time to open/close NW.js and Electron",
   "scripts": {
     "start": "npm run bench:nw && npm run bench:electron",
-    "start:nw": "nw .\\nw",
-    "start:electron": "electron .\\electron",
-    "bench:nw": "performance run \"nw .\\nw\"",
-    "bench:electron": "performance run \"electron .\\electron\""
+    "test": "npm run win:bench:nw && npm run win:bench:electron",
+    "start:nw": "nw ./nw",
+    "start:electron": "electron ./electron",
+    "bench:nw": "performance run \"nw ./nw\"",
+    "bench:electron": "performance run \"electron ./electron\"",
+    "win:start:nw": "nw .\\nw",
+    "win:start:electron": "electron .\\electron",
+    "win:bench:nw": "performance run \"nw .\\nw\"",
+    "win:bench:electron": "performance run \"electron .\\electron\""
   },
   "author": "TheJaredWilcurt",
   "license": "MIT",
