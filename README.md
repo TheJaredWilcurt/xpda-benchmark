@@ -33,10 +33,9 @@ Based on the total times, **Electron is 21.66s slower** at launching/closing, ac
 1. Install [Node.js/npm](https://nodejs.org)
 1. Download, fork, or clone this repo
 1. Run `npm install`
-1. Run `npm start`
+1. On Windows run `npm t`, on Non-Windows run `npm start`
    * The initial run may be slightly worse for both, because it will be creating folders/files in the AppData folder on first run of any NW.js or Electron app (or anything based on Chromium)
    * You can run this multiple times. Depending on system resources you will get slightly different results (generally +/-1 second) 
-   * May need to change `.\\electron` to `./electon` on Linux in `package.json`
 
 
 ### Submitting your results
