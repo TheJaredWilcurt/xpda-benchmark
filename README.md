@@ -13,10 +13,12 @@ A benchmark for launching NW.js and Electron.
 
 ## Results
 
-OS         | Node    | NW.js      | Electron | NW.js   | Electron | Computer       | RAM   | CPU
-:--        | :--     | :--        | :--      | :--     | :--      | :--            | :--   | :--
-Windows 7  |         | 0.54.1-SDK | 13.1.6   | 13s     | 11s      | Thinkpad       |       |
-Windows 10 | 14.15.4 | 0.54.1-SDK | 13.1.6   | 15.585s | 32.402s  | Latitude 6430u | 16 GB | Intel Core i7-3687U CPU @ 2.10GHz (2.60 GHz)
+OS         | Node    | NW.js      | Electron | NW.js   | Electron | Computer        | RAM   | CPU
+:--        | :--     | :--        | :--      | :--     | :--      | :--             | :--   | :--
+Windows 7  |         | 0.54.1-SDK | 13.1.6   | 13s     | 11s      | Thinkpad        |       |
+Windows 10 | 14.15.4 | 0.54.1-SDK | 13.1.6   | 15.585s | 32.402s  | Latitude 6430u  | 16 GB | Intel Core i7-3687U CPU @ 2.10GHz (2.60 GHz)
+Windows 10 | 15.11.0 | 0.54.1-SDK | 13.1.6   | 9.666s  | 23.566s  | Home Built PC   | 32 GB | Intel Core i7-6700K CPU @ 4.00GHz (4.00 GHz)
+
 
 ### Running the benchmark
 
@@ -24,4 +26,5 @@ Windows 10 | 14.15.4 | 0.54.1-SDK | 13.1.6   | 15.585s | 32.402s  | Latitude 643
 1. Download, fork, or clone this repo
 1. Run `npm install`
 1. Run `npm start`
-   * You can run this multiple times. Depending on system resources you will get slightly different results (generall +/-1 second) 
+   * The initial run may be slightly worse for both, because it will be creating folders/files in the AppData folder on first run of any NW.js or Electron app (or anything based on Chromium)
+   * You can run this multiple times. Depending on system resources you will get slightly different results (generally +/-1 second) 
